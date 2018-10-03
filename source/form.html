@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Седона</title>
+</head>
+<body>
+<header class="header">
+  <nav class="header__site-navigation">
+    <ul class="site-navigation">
+      <li class="site-navigation__item">
+        <a href="index.html">Главная</a>
+      </li>
+      <li class="site-navigation__item">
+        <a href="photo.html">Фото и видео</a>
+      </li>
+      <li class="site-navigation__item site-navigation__item--active">
+        <a href="form.html">Форма отзыва</a>
+      </li>
+      <li class="site-navigation__item">
+        <a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+      </li>
+    </ul>
+    <button class="header__menu-btn" type="button">Меню</button>
+    <button class="header__hide-menu-btn" type="button">Скрыть</button>
+    <a class="header__sedona-logo sedona-logo" href="index.html">Sedona</a>
+    <div class="header__billboard billboard">
+      <p class="billboard__welcome">
+        Welcome<br><span class="billboard__welcome-to">to the gorgeous</span>
+      </p>
+      <h1 class="billboard__title">Sedona</h1>
+      <p class="billboard__tagline">"Because the Grand Canyon sucks!"</p>
+    </div>
+  </nav>
+</header>
+<main class="main">
+  <h2 class="main__title">Оставьте свой отзыв</h2>
+  <p class="main__desc">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
+    достопримечательностях</p>
+  <form class="review-form" action="https://echo.htmlacademy.ru" method="post">
+    <fieldset class="review-form__fieldset fieldset">
+      <legend class="fieldset__legend">Представьтесь:</legend>
+      <label class="fieldset__label fieldset__label--required fieldset__label--row">
+        Имя*:
+        <input class="fieldset__input" type="text" name="firstname" placeholder="Петр" required>
+      </label>
+      <label class="fieldset__label fieldset__label--required">
+        Фамилия*:
+        <input class="fieldset__input" type="text" name="lastname" placeholder="Иванов" required>
+      </label>
+      <label class="fieldset__label">
+        Отчество:
+        <input class="fieldset__input" type="text" name="patronymic" placeholder="Александрович">
+      </label>
+    </fieldset>
+    <fieldset class="review-form__fieldset fieldset">
+      <legend class="fieldset__legend">Контактная информация:</legend>
+      <label class="fieldset__label fieldset__label--required fieldset__label--row">
+        Контактный телефон*:
+        <input class="fieldset__input fieldset__input--tel-icon" type="tel" name="phone" placeholder="Введите телефон" required>
+      </label>
+      <label class="fieldset__label fieldset__label--required">
+        Электронная почта*:
+        <input class="fieldset__input fieldset__input--email-icon" type="email" name="email" placeholder="Введите e-mail" required>
+      </label>
+    </fieldset>
+    <fieldset class="review-form_fieldset fieldset">
+      <legend class="fieldset__legend">Ваше общее впечатление:</legend>
+      <label class="fieldset__label fieldset__label--radio">
+        <input class="fieldset__radio" type="radio" name="impression" value="positive" checked>
+        Скорее положительное
+      </label>
+      <label class="fieldset__label fieldset__label--radio">
+        <input class="fieldset__radio" type="radio" name="impression" value="negative">
+        Скорее отрицательное
+      </label>
+      <label class="fieldset__label fieldset__label--radio">
+        <input class="fieldset__radio" type="radio" name="impression" value="neutral">
+        Затрудняюсь ответить
+      </label>
+    </fieldset>
+    <fieldset class="review-form_fieldset fieldset">
+      <legend class="fieldset__legend">Посещенные достопримечательности:</legend>
+      <label class="fieldset__label fieldset__label--checkbox">
+        <input class="fieldset__checkbox" type="checkbox" name="bridge" checked>
+        Мост Дьявола
+      </label>
+      <label class="fieldset__label fieldset__label--checkbox">
+        <input class="fieldset__checkbox" type="checkbox" name="bell" checked>
+        Гора-Колокол
+      </label>
+      <label class="fieldset__label fieldset__label--checkbox">
+        <input class="fieldset__checkbox" type="checkbox" name="park" checked>
+        Слайд-парк
+      </label>
+      <label class="fieldset__label fieldset__label--checkbox">
+        <input class="fieldset__checkbox" type="checkbox" name="rocks">
+        Красные скалы
+      </label>
+    </fieldset>
+    <fieldset class="review-form_fieldset fieldset">
+      <legend class="fieldset__legend">Опишите свои эмоции:</legend>
+      <textarea class="fieldset__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+    </fieldset>
+    <button class="btn" type="submit">Отправить отзыв</button>
+  </form>
+</main>
+<footer class="footer">
+  <p class="footer__hash-tag">#visitsedona</p>
+  <ul class="footer__social social">
+    <li class="social__link social__link--twitter"><a href="#">Twitter</a></li>
+    <li class="social__link social__link--facebook"><a href="#">Facebook</a></li>
+    <li class="social__link social__link--youtube"><a href="#">Youtube</a></li>
+  </ul>
+  <p class="footer__copyright">Разработано <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/adaptive">Htmlacademy</a>
+  </p>
+</footer>
+<div class="popup popup--success">
+  <p class="popup__title">Ваш отзыв отправлен!</p>
+  <p class="popup__message">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+  <button class="popup__btn btn" type="button">Закрыть окно</button>
+</div>
+<div class="popup popup--failure">
+  <p class="popup__title">Что-то пошло не так!</p>
+  <p class="popup__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+  <button class="popup__btn btn" type="button">Ok</button>
+</div>
+</body>
+</html>
