@@ -1,0 +1,39 @@
+@import "site-navigation";
+@import "sedona-logo";
+@import "billboard";
+
+.header__sedona-logo {
+  position: absolute;
+  left: 50%;
+  margin-left: -51px;
+}
+
+.header__menu-btn {
+  position: absolute;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+
+  &--open {
+    width: 23px;
+    height: 21px;
+    margin-top: 17px;
+    right: 18px;
+
+    svg {
+      fill: $sedona-blue;
+    }
+  }
+
+  &--close {
+    width: 23px;
+    height: 22px;
+    top: 17px;
+    right: 16px;
+
+    svg {
+      fill: white;
+    }
+  }
+}

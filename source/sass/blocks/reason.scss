@@ -1,0 +1,19 @@
+.reason {
+  background-color: #eeeeee;
+  padding: 40px 20px;
+
+  &--with-photo {
+    padding: 45px 30px;
+    color: white;
+    background-color: $sedona-blue;
+  }
+}
+
+.reason__text-block {
+  padding: 30px 20px;
+}
+
+.reason__photo {
+  display: block;
+  margin: 0 auto;
+}

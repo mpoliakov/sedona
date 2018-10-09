@@ -1,0 +1,11 @@
+@import "tile";
+
+.photo-list {
+  @include reset-list();
+}
+
+.photo-list__item {
+  padding: 20px;
+  text-align: left;
+  border: 1px solid #e5e5e5;
+}

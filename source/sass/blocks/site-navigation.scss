@@ -1,0 +1,41 @@
+.site-navigation {
+  @include reset-list();
+}
+
+.site-navigation__link {
+  display: block;
+  padding: 0 20px;
+  color: white;
+}
+
+.site-navigation__item {
+  min-height: 55px;
+  line-height: 55px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-transfor: uppercase;
+  background-color: $sedona-blue;
+  border-top: 1px solid #9ac2db;
+  border-bottom: 1px solid #678fa8;
+
+  &:hover,
+  &:focus {
+    background-color: $sedona-dark-blue;
+    transition: background-color 0.3s;
+  }
+
+  &:active {
+    background-color: $sedona-darkest-blue;
+    transition: background-color 0.3s;
+
+    .site-navigation__link {
+      opacity: 0.3;
+      transition: opacity 0.3s;
+    }
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+}

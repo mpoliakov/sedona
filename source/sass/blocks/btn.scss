@@ -1,0 +1,49 @@
+.btn {
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: middle;
+  padding: 15px 40px;
+  line-height: 18px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  background-color: $sedona-blue;
+  border: none;
+  cursor: pointer;
+
+  path {
+    fill: white;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $sedona-dark-blue;
+    outline: none;
+    transition: background-color 0.3s;
+  }
+
+  &:active {
+    background-color: $sedona-darkest-blue;
+    color: rgba(white, 0.3);
+    transition: background-color 0.3s, color 0.3s;
+    outline: none;
+
+    path {
+      fill: rgba(white, 0.3);
+      transition: fill 0.3s;
+    }
+  }
+
+  &--w-100 {
+    width: 100%;
+  }
+
+  &--social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 50px;
+    min-height: 50px;
+    padding: 0;
+  }
+}

@@ -1,0 +1,79 @@
+@import "radio";
+@import "checkbox";
+
+.fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.fieldset__legend {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.fieldset__input,
+.fieldset__textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+  font-weight: bold;
+  background-color: $sedona-gray;
+  border: 2px solid $sedona-gray;
+
+  &:hover {
+    background-color: $sedona-dark-gray;
+    border-color: $sedona-dark-gray;
+  }
+
+  &:focus {
+    background-color: white;
+    border-color: $sedona-dark-gray;
+  }
+}
+
+.fieldset__textarea {
+  width: 100%;
+  min-width: 280px;
+  min-height: 160px;
+  font-family: "PT Sans Bold", "Open Sans", sans-serif;
+  resize: vertical;
+}
+
+.fieldset__label-text {
+  padding-left: 15px;
+  color: $sedona-gray-text;
+}
+
+.fieldset__label {
+  display: block;
+  margin-bottom: 20px;
+  text-align: left;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .fieldset__input {
+    margin: 10px 0 0 0;
+  }
+
+  &--row {
+    display: flex;
+    align-items: center;
+
+    .fieldset__label-text {
+      padding-left: 0;
+    }
+
+    .fieldset__input {
+      width: 100%;
+      margin: 0 0 0 15px;
+    }
+  }
+}

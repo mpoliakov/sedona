@@ -1,0 +1,19 @@
+@import "fieldset";
+
+.review-form {
+  padding-bottom: 40px;
+}
+
+.review-form__fieldset {
+  display: block;
+  padding: 20px;
+  border-top: 1px solid $sedona-dark-gray;
+}
+
+.review-form__submit-btn {
+  height: 60px;
+  margin-top: 50px;
+  padding: 0 10px;
+  font-size: 21px;
+  line-height: 60px;
+}

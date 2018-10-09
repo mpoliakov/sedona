@@ -1,0 +1,21 @@
+@import "reasons-list";
+@import "find-hotel";
+@import "map";
+@import "photo-list";
+@import "video";
+@import "review-form";
+@import "popup";
+
+.main__text {
+  padding: 45px 25px 30px;
+}
+
+.main__title {
+  margin: 0 0 30px;
+}
+
+.main__desc {
+  margin: 0;
+  line-height: 26px;
+  color: $sedona-gray-text;
+}
