@@ -3,7 +3,7 @@
   min-height: 389px;
   margin-top: 55px;
   padding: 90px 20px 0;
-  background: url("../../img/bg-back-mobile@1x.jpg") #e1eef6 no-repeat top center;
+  background: url("../img/bg-back-mobile@1x.jpg") #e1eef6 no-repeat top center;
 
   &--compact {
     min-height: 160px;
@@ -27,4 +27,5 @@
 
 .billboard__sedona {
   display: none;
+  margin: 0 auto;
 }
