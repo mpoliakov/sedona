@@ -22,6 +22,9 @@
   box-sizing: border-box;
   width: 100%;
   padding: 15px;
+  color: black;
+  font-size: 18px;
+  line-height: 26px;
   font-weight: bold;
   background-color: $sedona-gray;
   border: 2px solid $sedona-gray;
@@ -47,6 +50,7 @@
 
 .fieldset__label-text {
   padding-left: 15px;
+  line-height: 26px;
   color: $sedona-gray-text;
 }
 
@@ -75,5 +79,10 @@
       width: 100%;
       margin: 0 0 0 15px;
     }
+  }
+
+  &--radio,
+  &--checkbox {
+    display: flex;
   }
 }

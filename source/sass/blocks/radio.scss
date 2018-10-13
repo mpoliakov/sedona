@@ -22,14 +22,19 @@
   }
 }
 
+.radio__label {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: none;
+}
+
 .radio {
-  display: block;
+  display: flex;
+  align-items: center;
   height: 46px;
   padding-left: 60px;
   position: relative;
-  line-height: 46px;
-  font-weight: bold;
-  text-transform: none;
 
   &:hover,
   &:focus {

@@ -3,18 +3,20 @@
 }
 
 .site-navigation__link {
-  display: block;
+  width: 100%;
   padding: 0 20px;
   color: white;
 }
 
 .site-navigation__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 55px;
-  line-height: 55px;
+  line-height: 40px;
   font-size: 18px;
   font-weight: bold;
   text-align: center;
-  text-transfor: uppercase;
   background-color: $sedona-blue;
   border-top: 1px solid #9ac2db;
   border-bottom: 1px solid #678fa8;
