@@ -1,0 +1,17 @@
+.video__legend {
+  padding: 40px;
+
+  h3 {
+    margin: 0 0 35px;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.video__player {
+  width: 320px;
+  min-height: 160px;
+  background: url("../img/video-mobile@1x.jpg") no-repeat;
+}

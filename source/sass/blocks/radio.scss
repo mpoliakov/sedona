@@ -1,0 +1,60 @@
+.radio__indicator {
+  display: block;
+  width: 46px;
+  height: 46px;
+  position: absolute;
+  left: 0;
+  border-radius: 50%;
+  background-color: $sedona-gray;
+}
+
+.radio__input:checked + .radio__indicator {
+  &::before {
+    display: block;
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    border-radius: 50%;
+    background-color: black;
+  }
+}
+
+.radio__label {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  height: 46px;
+  padding-left: 60px;
+  position: relative;
+
+  &:hover,
+  &:focus {
+    .radio__indicator {
+      background-color: $sedona-dark-gray;
+      transition: background-color 0.3s;
+    }
+  }
+
+  &:active {
+    .radio__indicator {
+      background-color: $sedona-darkest-gray;
+      transition: background-color 0.3s;
+    }
+
+    .radio__input:checked + .radio__indicator {
+      &::before {
+        opacity: 0.3;
+        transition: opacity 0.3s;
+      }
+    }
+  }
+}

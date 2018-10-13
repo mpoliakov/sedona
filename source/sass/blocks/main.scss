@@ -1,0 +1,17 @@
+.main__text {
+  padding: 45px 25px 30px;
+}
+
+.main__title {
+  margin: 0 0 30px;
+}
+
+.main__desc {
+  margin: 0;
+  line-height: 24px;
+  color: $sedona-gray-text;
+
+  .main--index & {
+    line-height: 26px;
+  }
+}
