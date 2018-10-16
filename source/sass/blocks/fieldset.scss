@@ -38,6 +38,10 @@
     background-color: white;
     border-color: $sedona-dark-gray;
   }
+
+  &::placeholder {
+    color: black;
+  }
 }
 
 .fieldset__textarea {
@@ -84,5 +88,29 @@
   &--radio,
   &--checkbox {
     display: flex;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .fieldset {
+    &--sights {
+      display: flex;
+      flex-wrap: wrap;
+
+      .fieldset__label {
+        box-sizing: border-box;
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .fieldset {
+    &--sights {
+      .fieldset__label {
+        width: 25%;
+      }
+    }
   }
 }

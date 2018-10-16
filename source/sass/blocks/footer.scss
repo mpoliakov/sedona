@@ -1,5 +1,5 @@
 .footer {
-  padding: 35px 20px 20px;
+  padding: 35px 20px;
   text-align: center;
 }
 
@@ -26,4 +26,25 @@
 .footer__htmlacademy-logo {
   margin-top: 10px;
   margin-left: 10px;
+}
+
+@media (min-width: $width-tablet) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 60px;
+  }
+
+  .footer__hash-tag,
+  .footer__social-list,
+  .footer__copyright {
+    margin: 0;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .footer {
+    padding: 35px 120px;
+  }
 }

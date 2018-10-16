@@ -1,3 +1,10 @@
 .reasons-list {
   @include reset-list();
 }
+
+@media (min-width: $width-tablet) {
+  .reasons-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

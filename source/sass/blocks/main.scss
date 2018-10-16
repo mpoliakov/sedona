@@ -15,3 +15,41 @@
     line-height: 26px;
   }
 }
+
+@media (min-width: $width-tablet) {
+  .main__text {
+    padding: 50px 140px;
+  }
+
+  .main__desc {
+    line-height: 26px;
+  }
+
+  .main {
+    &--photo {
+      .main__text {
+        padding: 75px 170px;
+      }
+    }
+
+    &--form {
+      .main__text {
+        padding: 70px 165px;
+      }
+    }
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .main__text {
+    padding: 50px 355px;
+  }
+
+  .main {
+    &--photo {
+      .main__text {
+        padding: 110px 380px 70px;
+      }
+    }
+  }
+}

@@ -16,3 +16,24 @@
   margin: 0 0 40px;
   line-height: 24px;
 }
+
+@media (min-width: $width-tablet) {
+  .find-hotel {
+    padding: 60px 155px;
+  }
+
+  .find-hotel__title {
+    font-size: 30px;
+    margin-bottom: 35px;
+  }
+
+  .find-hotel__desc {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .find-hotel {
+    padding: 60px 370px;
+  }
+}

@@ -47,13 +47,13 @@
 </header>
 <main class="main">
   <div class="main__text">
-    <h2 class="main__title">Оставьте свой отзыв</h2>
+    <h2 class="main__title heading--1">Оставьте свой отзыв</h2>
     <p class="main__desc">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
   </div>
   <form class="review-form" action="https://echo.htmlacademy.ru" method="post">
-    <div class="review-form__fieldset">
-      <fieldset class="fieldset">
-        <legend class="fieldset__legend">Представьтесь:</legend>
+    <div class="review-form__fieldset review-form__fieldset--w-50">
+      <fieldset class="fieldset fieldset--name">
+        <legend class="fieldset__legend heading--2">Представьтесь:</legend>
         <label class="fieldset__label fieldset__label--row fieldset__label--required">
           <span class="fieldset__label-text">Имя*:</span>
           <input class="fieldset__input" type="text" name="firstname" placeholder="Петр" required>
@@ -68,9 +68,9 @@
         </label>
       </fieldset>
     </div>
-    <div class="review-form__fieldset">
-      <fieldset class="fieldset">
-        <legend class="fieldset__legend">Контактная информация:</legend>
+    <div class="review-form__fieldset review-form__fieldset--w-100">
+      <fieldset class="fieldset fieldset--contact">
+        <legend class="fieldset__legend heading--2">Контактная информация:</legend>
         <label class="fieldset__label fieldset__label--required">
           <span class="fieldset__label-text">Контактный телефон*:</span>
           <input class="fieldset__input fieldset__input--tel-icon" type="tel" name="phone" placeholder="Введите телефон" required>
@@ -81,9 +81,9 @@
         </label>
       </fieldset>
     </div>
-    <div class="review-form__fieldset">
-      <fieldset class="fieldset">
-        <legend class="fieldset__legend">Ваше общее впечатление:</legend>
+    <div class="review-form__fieldset review-form__fieldset--w-50 review-form__fieldset--order-1">
+      <fieldset class="fieldset fieldset--expresion">
+        <legend class="fieldset__legend heading--2">Ваше общее впечатление:</legend>
         <label class="fieldset__label fieldset__label--radio radio">
           <input class="radio__input  visually-hidden" type="radio" name="impression" value="positive" checked>
           <span class="radio__indicator"></span>
@@ -101,9 +101,9 @@
         </label>
       </fieldset>
     </div>
-    <div class="review-form__fieldset">
-      <fieldset class="fieldset">
-        <legend class="fieldset__legend">Посещенные достопримечательности:</legend>
+    <div class="review-form__fieldset review-form__fieldset--w-100">
+      <fieldset class="fieldset fieldset--sights">
+        <legend class="fieldset__legend heading--2">Посещенные достопримечательности:</legend>
         <label class="fieldset__label fieldset__label--checkbox checkbox">
           <input class="checkbox__input visually-hidden" type="checkbox" name="bridge" checked>
           <span class="checkbox__indicator"></span>
@@ -126,12 +126,15 @@
         </label>
       </fieldset>
     </div>
-    <div class="review-form__fieldset">
+    <div class="review-form__fieldset review-form__fieldset--w-100">
       <fieldset class="fieldset">
-        <legend class="fieldset__legend">Опишите свои эмоции:</legend>
+        <legend class="fieldset__legend heading--2">Опишите свои эмоции:</legend>
         <textarea class="fieldset__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
-      <button class="review-form__submit-btn btn btn--w-100" type="submit">Отправить отзыв</button>
+    </div>
+    <div class="review-form__fieldset review-form__fieldset--w-100 review-form__fieldset--submit">
+      <button class="review-form__submit-btn btn" type="submit">Отправить отзыв</button>
+      <span class="review-form__required-fields">* — обязательные поля</span>
     </div>
   </form>
 </main>
