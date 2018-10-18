@@ -1,7 +1,7 @@
 .radio__indicator {
   display: block;
-  width: 46px;
-  height: 46px;
+  width: 56px;
+  height: 56px;
   position: absolute;
   left: 0;
   border-radius: 50%;
@@ -12,11 +12,11 @@
   &::before {
     display: block;
     content: "";
-    width: 16px;
-    height: 16px;
+    width: 22px;
+    height: 22px;
     position: absolute;
-    top: 15px;
-    left: 15px;
+    top: 17px;
+    left: 17px;
     border-radius: 50%;
     background-color: black;
   }
@@ -33,7 +33,7 @@
   display: flex;
   align-items: center;
   height: 46px;
-  padding-left: 60px;
+  padding-left: 70px;
   position: relative;
 
   &:hover,

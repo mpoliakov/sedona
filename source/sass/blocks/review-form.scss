@@ -20,7 +20,7 @@
   display: none;
 }
 
-@media (min-width: $width-tablet) {
+@media (min-width: $tablet-width) {
   .review-form {
     display: flex;
     flex-wrap: wrap;
@@ -30,6 +30,8 @@
   .review-form__fieldset {
     box-sizing: border-box;
     border: none;
+    padding: 0 0;
+    margin-bottom: 60px;
 
     &--w-100 {
       width: 100%;
@@ -39,8 +41,9 @@
       width: 50%;
     }
 
-    &--order-1 {
+    &--expresion {
       order: -1;
+      border-right: 1px solid $sedona-darkest-gray;
     }
 
     &--submit {
@@ -56,5 +59,11 @@
 
   .review-form__required-fields {
     display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review-form {
+    padding: 0 120px 60px;
   }
 }

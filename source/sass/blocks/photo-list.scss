@@ -12,7 +12,7 @@
   }
 }
 
-@media (min-width: $width-tablet) {
+@media (min-width: $tablet-width) {
   .photo-list {
     display: flex;
     flex-wrap: wrap;
@@ -31,9 +31,9 @@
   }
 }
 
-@media (min-width: $width-desktop) {
+@media (min-width: $desktop-width) {
   .photo-list {
-    width: $width-desktop;
+    width: $desktop-width;
   }
 
   .photo-list__item {

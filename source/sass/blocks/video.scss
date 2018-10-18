@@ -16,7 +16,7 @@
   background: url("../img/video-mobile@1x.jpg") no-repeat;
 }
 
-@media (min-width: $width-tablet) {
+@media (min-width: $tablet-width) {
   .video {
     padding: 0 60px 40px;
   }
@@ -32,7 +32,7 @@
   }
 }
 
-@media (min-width: $width-desktop) {
+@media (min-width: $desktop-width) {
   .video {
     padding: 0 200px 40px;
   }
