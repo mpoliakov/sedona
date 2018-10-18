@@ -33,3 +33,19 @@
     }
   }
 }
+
+@media (min-width: $width-tablet) {
+  .header__menu-btn {
+    display: none;
+  }
+
+  .header__sedona-logo {
+    top: 0;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .header__sedona-logo {
+    margin-left: -94px;
+  }
+}

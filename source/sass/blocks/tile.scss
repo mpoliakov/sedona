@@ -3,8 +3,8 @@
   line-height: 24px;
 }
 
-.tile__photo {
-  margin-bottom: 20px;
+.tile__info {
+  padding-top: 20px;
 }
 
 .tile__title {
@@ -33,4 +33,18 @@
   margin-right: 10px;
   opacity: 0.3;
   background-image: url("../img/icon-like.svg");
+}
+
+@media (min-width: $width-tablet) {
+  .tile__info {
+    padding: 20px;
+    position: relative;
+    background-color: $sedona-gray;
+  }
+
+  .tile__likes {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+  }
 }

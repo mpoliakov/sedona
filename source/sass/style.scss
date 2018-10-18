@@ -1,8 +1,10 @@
+@import "includes/normalize";
 @import "includes/variables";
 @import "includes/mixins";
 @import "includes/fonts";
 @import "includes/global";
 @import "blocks/visually-hidden";
+@import "blocks/heading";
 @import "blocks/btn";
 @import "blocks/header";
 @import "blocks/site-navigation";
@@ -11,7 +13,6 @@
 @import "blocks/main";
 @import "blocks/reasons-list";
 @import "blocks/reason";
-@import "blocks/advices-list";
 @import "blocks/find-hotel";
 @import "blocks/map";
 @import "blocks/photo-list";

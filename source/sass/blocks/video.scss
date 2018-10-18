@@ -15,3 +15,35 @@
   min-height: 160px;
   background: url("../img/video-mobile@1x.jpg") no-repeat;
 }
+
+@media (min-width: $width-tablet) {
+  .video {
+    padding: 0 60px 40px;
+  }
+
+  .video__player {
+    width: 648px;
+    min-height: 500px;
+    background: url("../img/video-tablet@1x.jpg") no-repeat;
+  }
+
+  .video__legend {
+    padding: 70px 120px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .video {
+    padding: 0 200px 40px;
+  }
+
+  .video__player {
+    width: 800px;
+    min-height: 500px;
+    background: url("../img/video-desktop@1x.jpg") no-repeat;
+  }
+
+  .video__legend {
+    padding: 70px 190px;
+  }
+}

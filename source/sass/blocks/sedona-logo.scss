@@ -4,3 +4,17 @@
   height: 84px;
   background: url("../img/logo-sedona-mobile.svg") no-repeat;
 }
+
+@media (min-width: $width-tablet) {
+  .sedona-logo {
+    background: url("../img/logo-sedona-tablet.svg") no-repeat;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .sedona-logo {
+    width: 188px;
+    height: 96px;
+    background: url("../img/logo-sedona-desktop.svg") no-repeat;
+  }
+}
