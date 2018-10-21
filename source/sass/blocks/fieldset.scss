@@ -43,6 +43,7 @@
 }
 
 .fieldset__input {
+  height: 56px;
   margin: 10px 0 0 0;
 }
 
@@ -86,6 +87,7 @@
   &--radio,
   &--checkbox {
     display: flex;
+    align-items: center;
   }
 }
 

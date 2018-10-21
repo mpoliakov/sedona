@@ -1,5 +1,9 @@
+html {
+  background-color: $sedona-gray;
+}
+
 body {
-  min-width: $mobile-width;
+  width: $mobile-width;
   margin: 0 auto;
   padding: 0;
   font-family: "PT Sans", "Open Sans", sans-serif;
@@ -7,6 +11,8 @@ body {
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+  background-color: white;
+  box-shadow: 0 5px 15px 0 rgba(black, 0.2);
 }
 
 a {

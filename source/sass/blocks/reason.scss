@@ -48,6 +48,22 @@
 }
 
 @media (max-width: $mobile-width-only) {
+  .reason:first-child {
+    padding-top: 80px;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      display: block;
+      content: "";
+      width: 320px;
+      height: 37px;
+      background: url("../img/bg-triangle.svg") no-repeat;
+    }
+  }
+
   .reason--border {
     &::after {
       display: block;

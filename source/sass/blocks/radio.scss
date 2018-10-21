@@ -1,9 +1,10 @@
 .radio__indicator {
+  position: absolute;
+  left: 0;
+  top: 0;
   display: block;
   width: 56px;
   height: 56px;
-  position: absolute;
-  left: 0;
   border-radius: 50%;
   background-color: $sedona-gray;
 }
@@ -32,7 +33,7 @@
 .radio {
   display: flex;
   align-items: center;
-  height: 46px;
+  height: 56px;
   padding-left: 70px;
   position: relative;
 
