@@ -2,6 +2,10 @@
   padding: 45px 25px 30px;
 }
 
+.main--index .main__text {
+  padding-bottom: 0;
+}
+
 .main__title {
   margin: 0 0 30px;
 }
@@ -16,7 +20,7 @@
   }
 }
 
-@media (min-width: $width-tablet) {
+@media (min-width: $tablet-width) {
   .main__text {
     padding: 50px 140px;
   }
@@ -34,22 +38,19 @@
 
     &--form {
       .main__text {
-        padding: 70px 165px;
+        padding: 75px 165px 70px;
       }
     }
   }
 }
 
-@media (min-width: $width-desktop) {
+@media (min-width: $desktop-width) {
   .main__text {
     padding: 50px 355px;
   }
 
-  .main {
-    &--photo {
-      .main__text {
-        padding: 110px 380px 70px;
-      }
-    }
+  .main--photo .main__text,
+  .main--form .main__text {
+    padding: 110px 380px 60px;
   }
 }

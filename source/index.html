@@ -7,11 +7,11 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="header">
-  <nav class="header__site-navigation">
+<header class="header header--no-js">
+  <nav class="header__site-navigation header__site-navigation--closed">
     <ul class="site-navigation">
       <li class="site-navigation__item site-navigation__item--active">
-        <a class="site-navigation__link" href="index.html">Главная</a>
+        <a class="site-navigation__link">Главная</a>
       </li>
       <li class="site-navigation__item">
         <a class="site-navigation__link" href="photo.html">Фото и видео</a>
@@ -23,6 +23,14 @@
         <a class="site-navigation__link" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
       </li>
     </ul>
+    <button class="header__menu-btn header__menu-btn--close" type="button">
+      <span class="visually-hidden">Скрыть меню</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22.199px" height="22.199px">
+        <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
+      </svg>
+    </button>
+  </nav>
+  <div class="header__billboard">
     <a class="header__sedona-logo sedona-logo">
       <span class="visually-hidden">Sedona</span>
     </a>
@@ -32,18 +40,12 @@
         <g><rect width="22.928" height="3.964"/><rect y="9.009" width="22.928" height="3.964"/><rect y="18.018" width="22.928" height="3.964"/></g>
       </svg>
     </button>
-    <button class="header__menu-btn header__menu-btn--close" type="button">
-      <span class="visually-hidden">Скрыть меню</span>
-      <svg xmlns="http://www.w3.org/2000/svg" width="22.199px" height="22.199px">
-        <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
-      </svg>
-    </button>
-    <div class="header__billboard billboard">
+    <div class="billboard">
       <h1 class="visually-hidden">Sedona</h1>
-      <img class="billboard__text" src="./img/text-sedona-index.svg" height="389" width="320">
-      <img class="billboard__sedona" src="./img/text-sedona.svg" height="160" width="320">
+      <img class="billboard__text" src="./img/text-sedona-index.svg" height="389" width="320" alt="Sedona">
+      <img class="billboard__sedona" src="./img/text-sedona.svg" height="160" width="320" alt="Sedona">
     </div>
-  </nav>
+  </div>
 </header>
 <main class="main main--index">
   <div class="main__text">
@@ -51,52 +53,52 @@
     <p class="main__desc">Рассмотрим 5 причин, по которым Селона круче, чем Гранд Каньон!</p>
   </div>
   <ul class="reasons-list">
-    <li class="reasons-list__item reason reason--with-photo">
-      <div class="reason__text-block">
-        <h3 class="reason__title heading--2">Настоящий городок</h3>
-        <p class="reason__number">№1</p>
-        <p class="reason__desc">Седона не аттракцион для туристов, там течет своя жизнь</p>
+    <li class="reasons-list__item reason reason--blue">
+      <h3 class="reason__title heading--2">Настоящий городок</h3>
+      <p class="reason__number">— №1 —</p>
+      <p class="reason__desc">Седона не аттракцион для туристов, там течет своя жизнь</p>
+    </li>
+    <li class="reasons-list__item reason reason--photo">
+      <img class="reason__photo" src="./img/main-city-mobile@1x.jpg" width="320" height="260" alt="Фото города">
+    </li>
+    <li class="reasons-list__item reasons-list__item--group">
+      <div class="reason reason--with-icon reason--house">
+        <img class="reason__icon reason__icon--house" src="./img/icon-house.svg" width="37" height="36">
+        <h3 class="reason__title heading--2">Жильё</h3>
+        <p class="reason__desc">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
       </div>
-      <!--<img class="reason__photo" src="./img/main-city-mobile@1x.jpg" width="320" height="260" alt="Фото города">-->
-      <div class="reason__photo reason__photo--city"></div>
-    </li>
-    <li class="reasons-list__item reason reason--with-icon">
-      <img class="reason__icon reason__icon--house" src="./img/icon-house.svg" width="37" height="36">
-      <h3 class="reason__title heading--2">Жильё</h3>
-      <p class="reason__desc">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-    </li>
-    <li class="reasons-list__item reason reason--with-icon">
-      <img class="reason__icon reason__icon-gift" src="./img/icon-gift.svg" width="32" height="38">
-      <h3 class="reason__title heading--2">Сувениры</h3>
-      <p class="reason__desc">Не только китайского, но и местного производства!</p>
-    </li>
-    <li class="reasons-list__item reason reason--with-icon">
-      <img class="reason__icon reason__icon-burger" src="./img/icon-burger.svg" width="40" height="35">
-      <h3 class="reason__title heading--2">Еда</h3>
-      <p class="reason__desc">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-    </li>
-    <li class="reasons-list__item reason reason--with-photo">
-      <div class="reason__text-block">
-        <h3 class="reason__title heading--2">Там есть мост дьявола</h3>
-        <p class="reason__number">№2</p>
-        <p class="reason__desc">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+      <div class="reason reason--with-icon reason--gift">
+        <img class="reason__icon reason__icon--gift" src="./img/icon-gift.svg" width="32" height="38">
+        <h3 class="reason__title heading--2">Сувениры</h3>
+        <p class="reason__desc">Не только китайского, но и местного производства!</p>
       </div>
-      <!--<img class="reason__photo" src="./img/photo-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост дьявола">-->
-      <div class="reason__photo reason__photo--bridge"></div>
+      <div class="reason reason--with-icon reason--burger">
+        <img class="reason__icon reason__icon--burger" src="./img/icon-burger.svg" width="40" height="35">
+        <h3 class="reason__title heading--2">Еда</h3>
+        <p class="reason__desc">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+      </div>
     </li>
-    <li class="reasons-list__item reason">
+    <li class="reasons-list__item reason reason--blue">
+      <h3 class="reason__title heading--2">Там есть мост дьявола</h3>
+      <p class="reason__number">— №2 —</p>
+      <p class="reason__desc">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+    </li>
+    <li class="reasons-list__item reason reason--photo">
+      <img class="reason__photo" src="./img/photo-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост дьявола">
+    </li>
+    <li class="reasons-list__item reason reason--border">
       <h3 class="reason__title heading--2">Небольшая площадь</h3>
-      <p class="reason__number">№3</p>
+      <p class="reason__number">— №3 —</p>
       <p class="reason__desc">Все интересные места находятся очень близко</p>
     </li>
-    <li class="reasons-list__item reason">
+    <li class="reasons-list__item reason reason--border">
       <h3 class="reason__title heading--2">Красивая дорога</h3>
-      <p class="reason__number">№4</p>
+      <p class="reason__number">— №4 —</p>
       <p class="reason__desc">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
     </li>
     <li class="reasons-list__item reason">
       <h3 class="reason__title heading--2">Мало туристов</h3>
-      <p class="reason__number">№5</p>
+      <p class="reason__number">— №5 —</p>
       <p class="reason__desc">Большинство едет в Гранд Каньон и толпится там</p>
     </li>
   </ul>
@@ -109,32 +111,34 @@
 </main>
 <footer class="footer">
   <p class="footer__hash-tag">#visitsedona</p>
-  <ul class="footer__social-list social-list">
-    <li class="social-list__item">
-      <a class="btn btn--social btn--twitter" href="#" title="Twitter">
-        <span class="visually-hidden">Twitter</span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663">
-          <path clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
-        </svg>
-      </a>
-    </li>
-    <li class="social-list__item">
-      <a class="btn btn--social btn--facebook" href="#" title="Facebook">
-        <span class="visually-hidden">Facebook</span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944">
-          <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
-        </svg>
-      </a>
-    </li>
-    <li class="social-list__item">
-      <a class="btn btn--social btn--youtube" href="#" title="Youtube">
-        <span class="visually-hidden">Youtube</span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015">
-          <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
-        </svg>
-      </a>
-    </li>
-  </ul>
+  <div class="footer__social-list">
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a class="btn btn--social btn--twitter" href="#" title="Twitter">
+          <span class="visually-hidden">Twitter</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663">
+            <path clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
+          </svg>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="btn btn--social btn--facebook" href="#" title="Facebook">
+          <span class="visually-hidden">Facebook</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944">
+            <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
+          </svg>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="btn btn--social btn--youtube" href="#" title="Youtube">
+          <span class="visually-hidden">Youtube</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015">
+            <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
   <p class="footer__copyright">
     Разработано
     <a class="footer__htmlacademy-logo htmlacademy-logo" href="https://htmlacademy.ru/intensive/adaptive">
@@ -145,5 +149,6 @@
     </a>
   </p>
 </footer>
+<script src="/js/app.js"></script>
 </body>
 </html>

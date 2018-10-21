@@ -36,13 +36,9 @@
       transition: opacity 0.3s;
     }
   }
-
-  &:disabled {
-    background-color: #e5e5e5;
-  }
 }
 
-@media (min-width: $width-tablet) {
+@media (min-width: $tablet-width) {
   .site-navigation {
     display: flex;
   }
@@ -109,9 +105,9 @@
   }
 }
 
-@media (min-width: $width-desktop) {
+@media (min-width: $desktop-width) {
   .site-navigation {
-    width: $width-desktop;
+    width: $desktop-width;
   }
 
   .site-navigation__item {

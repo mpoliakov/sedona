@@ -5,13 +5,13 @@
   background: url("../img/logo-sedona-mobile.svg") no-repeat;
 }
 
-@media (min-width: $width-tablet) {
+@media (min-width: $tablet-width) {
   .sedona-logo {
     background: url("../img/logo-sedona-tablet.svg") no-repeat;
   }
 }
 
-@media (min-width: $width-desktop) {
+@media (min-width: $desktop-width) {
   .sedona-logo {
     width: 188px;
     height: 96px;

@@ -1,12 +1,18 @@
+html {
+  background-color: $sedona-gray;
+}
+
 body {
-  min-width: $width-phone;
+  width: $mobile-width;
   margin: 0 auto;
   padding: 0;
-  font-family: "PT Sans", "PT Sans Bold", "Open Sans", sans-serif;
+  font-family: "PT Sans", "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+  background-color: white;
+  box-shadow: 0 5px 15px 0 rgba(black, 0.2);
 }
 
 a {
@@ -27,14 +33,27 @@ h4 {
   font-weight: bold;
 }
 
-@media (min-width: $width-tablet) {
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@media (min-width: $tablet-width) {
   body {
-    width: $width-tablet;
+    width: $tablet-width;
   }
 }
 
-@media (min-width: $width-desktop) {
+@media (min-width: $desktop-width) {
   body {
-    width: $width-desktop;
+    width: $desktop-width;
   }
 }

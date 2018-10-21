@@ -17,7 +17,7 @@
   line-height: 24px;
 }
 
-@media (min-width: $width-tablet) {
+@media (min-width: $tablet-width) {
   .find-hotel {
     padding: 60px 155px;
   }
@@ -32,7 +32,7 @@
   }
 }
 
-@media (min-width: $width-desktop) {
+@media (min-width: $desktop-width) {
   .find-hotel {
     padding: 60px 370px;
   }

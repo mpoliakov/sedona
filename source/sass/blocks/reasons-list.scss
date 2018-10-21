@@ -2,8 +2,9 @@
   @include reset-list();
 }
 
-@media (min-width: $width-tablet) {
-  .reasons-list {
+@media (min-width: $tablet-width) {
+  .reasons-list,
+  .reasons-list__item--group {
     display: flex;
     flex-wrap: wrap;
   }

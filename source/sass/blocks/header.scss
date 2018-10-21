@@ -1,51 +1,79 @@
 .header__sedona-logo {
   position: absolute;
+  top: 0;
   left: 50%;
-  margin-left: -51px;
+  z-index: 1;
+  transform: translateX(-50%);
 }
 
 .header__menu-btn {
-  position: absolute;
-  padding: 0;
-
-  background-color: transparent;
-  border: none;
-
-  &--open {
-    width: 23px;
-    height: 21px;
-    margin-top: 17px;
-    right: 18px;
-
-    svg {
-      fill: $sedona-blue;
-    }
-  }
-
-  &--close {
-    width: 23px;
-    height: 22px;
-    top: 17px;
-    right: 16px;
-
-    svg {
-      fill: white;
-    }
-  }
+  display: none;
 }
 
-@media (min-width: $width-tablet) {
+@media (max-width: $mobile-width-only) {
   .header__menu-btn {
-    display: none;
+    display: block;
+    position: absolute;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &--open {
+      width: 23px;
+      height: 21px;
+      top: 17px;
+      right: 18px;
+
+      svg {
+        fill: $sedona-blue;
+      }
+    }
+
+    &--close {
+      width: 23px;
+      height: 22px;
+      top: 17px;
+      right: 16px;
+
+      svg {
+        fill: white;
+      }
+    }
   }
 
-  .header__sedona-logo {
-    top: 0;
+  .header__billboard {
+    padding-top: 55px;
+    position: relative;
   }
-}
 
-@media (min-width: $width-desktop) {
-  .header__sedona-logo {
-    margin-left: -94px;
+  .header__site-navigation--closed {
+    .site-navigation {
+      display: none;
+    }
+
+    .header__menu-btn--close {
+      display: none;
+    }
+  }
+
+  .header__site-navigation--opened {
+    .site-navigation {
+      display: block;
+    }
+
+    .header__menu-btn--close {
+      display: block;
+    }
+  }
+
+  .header--no-js {
+    .site-navigation {
+      display: block;
+    }
+
+    .header__menu-btn {
+      display: none;
+    }
   }
 }
