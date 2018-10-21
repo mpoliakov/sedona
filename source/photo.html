@@ -31,9 +31,11 @@
     </button>
   </nav>
   <div class="header__billboard">
-    <a class="header__sedona-logo sedona-logo" href="index.html">
-      <span class="visually-hidden">Sedona</span>
-    </a>
+    <picture>
+      <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+      <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+      <img class="header__sedona-logo sedona-logo" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Седона">
+    </picture>
     <button class="header__menu-btn header__menu-btn--open" type="button">
       <span class="visually-hidden">Показать меню</span>
       <svg xmlns="http://www.w3.org/2000/svg" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982">
@@ -55,7 +57,11 @@
   </div>
   <ul class="photo-list">
     <li class="photo-list__item photo-list__item--w-100 tile">
-      <img class="tile__photo" src="./img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="./img/photo-sunset-desktop@1x.jpg 1x, ./img/photo-sunset-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="./img/photo-sunset-tablet@1x.jpg 1x, ./img/photo-sunset-tablet@2x.jpg 2x">
+        <img class="tile__photo" src="./img/photo-sunset-mobile@1x.jpg" srcset="./img/photo-sunset-mobile@2x.jpg 2x" alt="Неродные просторы">
+      </picture>
       <div class="tile__info">
         <h3 class="tile__title">Неродные просторы</h3>
         <span class="tile__author">Автор фото: Борис</span>
@@ -63,7 +69,11 @@
       </div>
     </li>
     <li class="photo-list__item tile">
-      <img class="tile__photo" src="./img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местная растительность">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="./img/photo-cactus-desktop@1x.jpg 1x, ./img/photo-cactus-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="./img/photo-cactus-tablet@1x.jpg 1x, ./img/photo-cactus-tablet@2x.jpg 2x">
+        <img class="tile__photo" src="./img/photo-cactus-mobile@1x.jpg" srcset="./img/photo-cactus-mobile@2x.jpg 2x" alt="Неродные просторы">
+      </picture>
       <div class="tile__info">
         <h3 class="tile__title">Местная растительность</h3>
         <span class="tile__author">Автор фото: Сергей</span>
@@ -71,7 +81,11 @@
       </div>
     </li>
     <li class="photo-list__item tile">
-      <img class="tile__photo" src="./img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="./img/photo-roads-desktop@1x.jpg 1x, ./img/photo-roads-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="./img/photo-roads-tablet@1x.jpg 1x, ./img/photo-roads-tablet@2x.jpg 2x">
+        <img class="tile__photo" src="./img/photo-roads-mobile@1x.jpg" srcset="./img/photo-roads-mobile@2x.jpg 2x" alt="Неродные просторы">
+      </picture>
       <div class="tile__info">
         <h3 class="tile__title">Дорога на север</h3>
         <span class="tile__author">Автор фото: Петр</span>
@@ -79,7 +93,11 @@
       </div>
     </li>
     <li class="photo-list__item tile">
-      <img class="tile__photo" src="./img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="./img/photo-bridge-desktop@1x.jpg 1x, ./img/photo-bridge-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="./img/photo-bridge-tablet@1x.jpg 1x, ./img/photo-bridge-tablet@2x.jpg 2x">
+        <img class="tile__photo" src="./img/photo-bridge-mobile@1x.jpg" srcset="./img/photo-bridge-mobile@2x.jpg 2x" alt="Неродные просторы">
+      </picture>
       <div class="tile__info">
         <h3 class="tile__title">Мост дьявола</h3>
         <span class="tile__author">Автор фото: Антон</span>

@@ -31,9 +31,11 @@
     </button>
   </nav>
   <div class="header__billboard">
-    <a class="header__sedona-logo sedona-logo" href="index.html">
-      <span class="visually-hidden">Sedona</span>
-    </a>
+    <picture>
+      <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+      <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+      <img class="header__sedona-logo sedona-logo" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Седона">
+    </picture>
     <button class="header__menu-btn header__menu-btn--open" type="button">
       <span class="visually-hidden">Показать меню</span>
       <svg xmlns="http://www.w3.org/2000/svg" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982">
