@@ -36,20 +36,6 @@
       transition: opacity 0.3s;
     }
   }
-
-  &--active {
-    background-color: $sedona-dark-gray;
-
-    &:hover,
-    &:focus,
-    &:active {
-      background-color: $sedona-dark-gray;
-
-      .site-navigation__link {
-        opacity: 1;
-      }
-    }
-  }
 }
 
 @media (min-width: $tablet-width) {
