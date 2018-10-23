@@ -47,6 +47,30 @@
   margin: 10px 0 0 0;
 }
 
+.fieldset__input--tel-icon,
+.fieldset__input--email-icon {
+  padding-right: 66px;
+}
+
+.fieldset__input--tel-icon + .fieldset__input-icon,
+.fieldset__input--email-icon + .fieldset__input-icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  content: "";
+  width: 56px;
+  height: 56px;
+}
+
+.fieldset__input--tel-icon + .fieldset__input-icon {
+  background: url("../img/icon-phone.svg") #e6e6e6 no-repeat center center;
+}
+
+.fieldset__input--email-icon + .fieldset__input-icon {
+  background: url("../img/icon-mail.svg") #e6e6e6 no-repeat center center;
+}
+
 .fieldset__textarea {
   width: 100%;
   min-width: 280px;
@@ -61,6 +85,7 @@
 }
 
 .fieldset__label {
+  position: relative;
   display: block;
   margin-bottom: 20px;
   text-align: left;
