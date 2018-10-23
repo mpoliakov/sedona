@@ -10,21 +10,10 @@
   }
 }
 
-.video__player {
-  width: 320px;
-  min-height: 160px;
-  background: url("../img/video-mobile@1x.jpg") no-repeat;
-}
 
 @media (min-width: $tablet-width) {
   .video {
     padding: 0 60px 40px;
-  }
-
-  .video__player {
-    width: 648px;
-    min-height: 500px;
-    background: url("../img/video-tablet@1x.jpg") no-repeat;
   }
 
   .video__legend {
@@ -35,12 +24,6 @@
 @media (min-width: $desktop-width) {
   .video {
     padding: 0 200px 40px;
-  }
-
-  .video__player {
-    width: 800px;
-    min-height: 500px;
-    background: url("../img/video-desktop@1x.jpg") no-repeat;
   }
 
   .video__legend {
