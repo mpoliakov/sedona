@@ -9,7 +9,10 @@
   }
 
   &--photo {
+    width: 320px;
+    height: 260px;
     padding: 0;
+    overflow: hidden;
   }
 
   &--with-icon {
@@ -37,7 +40,7 @@
 
 .reason__photo {
   width: 320px;
-  height: 260px;
+  height: auto;
   margin: 0 auto;
 }
 
@@ -91,7 +94,7 @@
       display: flex;
       padding: 0;
       width: 512px;
-      overflow: hidden;
+      height: 256px;
     }
 
     &--with-icon {
@@ -112,7 +115,6 @@
 
   .reason__photo {
     width: 512px;
-    height: 256px;
   }
 }
 
@@ -131,7 +133,6 @@
     left: 50%;
     top: 50%;
     width: 800px;
-    height: 400px;
     background-size: cover;
     transform: translate(-50%, -50%);
   }

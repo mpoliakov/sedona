@@ -29,6 +29,7 @@
   margin: 0;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 
   &--subtitles {
     margin: 0 30px 0 auto;
@@ -64,6 +65,7 @@
   width: 84%;
   height: 3px;
   background-color: rgba(white, 0.2);
+  cursor: pointer;
 }
 
 .video-player__progress-indicator {
@@ -76,6 +78,7 @@
   height: 8px;
   background-color: white;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
