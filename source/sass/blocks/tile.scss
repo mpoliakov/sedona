@@ -3,6 +3,11 @@
   line-height: 24px;
 }
 
+.tile__photo {
+  width: 280px;
+  height: 280px;
+}
+
 .tile__info {
   padding-top: 20px;
 }
@@ -36,6 +41,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .tile__photo {
+    width: 324px;
+    height: 267px;
+  }
+
+  .photo-list__item--w-100 .tile__photo {
+    width: 648px;
+  }
+
   .tile__info {
     padding: 20px;
     position: relative;
@@ -52,6 +66,15 @@
 @media (min-width: $desktop-width) {
   .tile {
     position: relative;
+  }
+
+  .tile__photo {
+    width: 400px;
+    height: 267px;
+  }
+
+  .photo-list__item--w-100 .tile__photo {
+    width: 1200px;
   }
 
   .tile__info {
