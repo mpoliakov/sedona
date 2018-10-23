@@ -1,14 +1,14 @@
 .htmlacademy-logo {
   &:hover,
   &:focus {
-    path {
+    svg {
       fill: $sedona-blue;
       transition: fill 0.3s;
     }
   }
 
   &:active {
-    path {
+    svg {
       opacity: 0.3;
       transition: opacity 0.3s;
     }

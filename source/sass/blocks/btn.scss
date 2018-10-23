@@ -13,10 +13,6 @@
   border: none;
   cursor: pointer;
 
-  path {
-    fill: white;
-  }
-
   &:hover,
   &:focus {
     background-color: $sedona-dark-blue;
@@ -29,11 +25,6 @@
     color: rgba(white, 0.3);
     transition: background-color 0.3s, color 0.3s;
     outline: none;
-
-    path {
-      fill: rgba(white, 0.3);
-      transition: fill 0.3s;
-    }
   }
 
   &:disabled {
@@ -51,5 +42,16 @@
     min-width: 50px;
     min-height: 50px;
     padding: 0;
+
+    svg {
+      fill: white;
+    }
+
+    &:active {
+      svg {
+        fill: rgba(white, 0.3);
+        transition: fill 0.3s;
+      }
+    }
   }
 }

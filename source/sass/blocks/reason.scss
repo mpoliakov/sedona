@@ -48,6 +48,7 @@
   position: absolute;
   top: 30px;
   left: 20px;
+  fill: $sedona-blue;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -78,6 +79,23 @@
       left: 50%;
       transform: translateX(-50%);
       background-color: $sedona-darkest-gray;
+    }
+  }
+
+  .reason__icon {
+    &--house {
+      width: 37px;
+      height: 36px;
+    }
+
+    &--gift {
+      width: 32px;
+      height: 37px;
+    }
+
+    &--burger {
+      width: 38px;
+      height: 35px;
     }
   }
 }

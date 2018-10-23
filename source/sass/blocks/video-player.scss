@@ -35,8 +35,7 @@
     margin: 0 30px 0 auto;
   }
 
-  path,
-  polygon {
+  svg {
     fill: #5c6870;
   }
 }
@@ -106,8 +105,7 @@
   .video-player__btn {
     margin: 0;
 
-    path,
-    polygon {
+    svg {
       fill: white;
     }
   }
