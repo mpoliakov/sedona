@@ -2,8 +2,10 @@
   padding: 45px 25px 30px;
 }
 
-.main--index .main__text {
-  padding-bottom: 0;
+@media (max-width: $mobile-width-only) {
+  .main--index .main__text {
+    padding-bottom: 0;
+  }
 }
 
 .main__title {
