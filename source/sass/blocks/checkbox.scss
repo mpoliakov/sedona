@@ -1,22 +1,22 @@
 .checkbox__indicator {
+  position: absolute;
+  left: 0;
   display: block;
   width: 56px;
   height: 56px;
-  position: absolute;
-  left: 0;
   border-radius: 5px;
   background-color: $sedona-gray;
 }
 
 .checkbox__input:checked + .checkbox__indicator {
   &::before {
+    position: absolute;
+    top: 20px;
+    left: 18px;
     display: block;
     content: "";
     width: 23px;
     height: 16px;
-    position: absolute;
-    top: 20px;
-    left: 18px;
     background-image: url("../img/icon-tick.svg");
   }
 }
@@ -29,11 +29,11 @@
 }
 
 .checkbox {
+  position: relative;
   display: flex;
   align-items: center;
   height: 56px;
   padding-left: 85px;
-  position: relative;
 
   &:hover,
   &:focus {
