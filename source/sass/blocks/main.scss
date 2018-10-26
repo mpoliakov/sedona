@@ -2,12 +2,6 @@
   padding: 40px 25px 30px;
 }
 
-@media (max-width: $mobile-width-only) {
-  .main--index .main__text {
-    padding-bottom: 5px;
-  }
-}
-
 .main__title {
   margin: 0 0 30px;
 }
@@ -19,6 +13,17 @@
 
   .main--index & {
     line-height: 26px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main--index .main__text {
+    padding-bottom: 5px;
+  }
+
+  .main--photo .main__text {
+    padding-top: 35px;
+    padding-bottom: 25px;
   }
 }
 
@@ -34,7 +39,7 @@
   .main {
     &--photo {
       .main__text {
-        padding: 75px 170px;
+        padding: 75px 170px 65px;
       }
     }
 
@@ -48,11 +53,11 @@
 
 @media (min-width: $desktop-width) {
   .main__text {
-    padding: 50px 355px;
+    padding: 50px 355px
   }
 
   .main--photo .main__text,
   .main--form .main__text {
-    padding: 110px 380px 60px;
+    padding: 115px 380px 70px;
   }
 }

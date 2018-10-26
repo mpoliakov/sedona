@@ -29,7 +29,7 @@
 
   &--compact {
     min-height: 160px;
-    padding-top: 50px;
+    padding: 50px 45px 0;
     background-position-y: bottom;
   }
 }
@@ -73,6 +73,7 @@
     }
 
     &::after {
+      bottom: -1px;
       width: 1200px;
       background: url("../img/bg-intro-triangle-desktop.svg") no-repeat;
     }
