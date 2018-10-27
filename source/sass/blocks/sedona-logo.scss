@@ -1,11 +1,15 @@
 .sedona-logo {
   width: 102px;
   height: 84px;
+
+  img {
+    width: 100%;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .sedona-logo {
-    width: 188px;
+    width: 187px;
     height: 96px;
   }
 }
