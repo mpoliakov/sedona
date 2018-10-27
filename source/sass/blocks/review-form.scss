@@ -1,10 +1,10 @@
 .review-form {
-  padding-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .review-form__fieldset {
   display: block;
-  padding: 20px;
+  padding: 15px 20px 30px;
   border-top: 1px solid $sedona-dark-gray;
 
   &--submit {
@@ -30,8 +30,12 @@
   .review-form__fieldset {
     box-sizing: border-box;
     padding: 0 0;
-    margin-bottom: 60px;
+    margin-bottom: 55px;
     border: none;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     &--w-100 {
       width: 100%;
@@ -39,6 +43,7 @@
 
     &--w-50 {
       width: 50%;
+      margin-bottom: 75px;
     }
 
     &--expresion {

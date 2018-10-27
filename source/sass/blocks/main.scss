@@ -25,6 +25,10 @@
     padding-top: 35px;
     padding-bottom: 25px;
   }
+
+  .main--form .main__text {
+    padding: 35px 10px 15px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -53,11 +57,14 @@
 
 @media (min-width: $desktop-width) {
   .main__text {
-    padding: 50px 355px
+    padding: 50px 355px;
   }
 
-  .main--photo .main__text,
-  .main--form .main__text {
+  .main--photo .main__text {
     padding: 115px 380px 70px;
+  }
+
+  .main--form .main__text {
+    padding: 115px 380px 55px;
   }
 }
