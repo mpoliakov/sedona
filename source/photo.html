@@ -35,11 +35,13 @@
     </button>
   </nav>
   <div class="header__billboard">
-    <picture>
-      <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
-      <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-      <img class="header__sedona-logo sedona-logo" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Седона">
-    </picture>
+    <a class="header__sedona-logo sedona-logo" href="index.html">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+        <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Седона">
+      </picture>
+    </a>
     <button class="header__menu-btn header__menu-btn--open" type="button">
       <span class="visually-hidden">Показать меню</span>
       <svg width="23" height="22">
@@ -48,81 +50,109 @@
     </button>
     <div class="billboard billboard--compact">
       <h1 class="visually-hidden">Sedona</h1>
-      <img class="billboard__text" src="./img/text-sedona.svg" height="160" width="320" alt="Sedona">
+      <img class="billboard__text" src="img/text-sedona.svg" height="160" width="320" alt="Sedona">
     </div>
   </div>
 </header>
 <main class="main main--photo">
   <div class="main__text">
-    <h2 class="main__title heading--1">Фото и видео</h2>
+    <h2 class="main__title heading heading--1">Фото и видео</h2>
     <p class="main__desc">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и
       экономике.</p>
   </div>
   <ul class="photo-list">
     <li class="photo-list__item photo-list__item--w-100 tile">
-      <picture>
-        <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
-        <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
-        <source media="(min-width: 1200px)" srcset="./img/photo-sunset-desktop@1x.jpg 1x, ./img/photo-sunset-desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)" srcset="./img/photo-sunset-tablet@1x.jpg 1x, ./img/photo-sunset-tablet@2x.jpg 2x">
-        <img class="tile__photo" src="./img/photo-sunset-mobile@1x.jpg" srcset="./img/photo-sunset-mobile@2x.jpg 2x" alt="Неродные просторы">
-      </picture>
+      <a class="tile__photo-link" href="#">
+        <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
+          <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, ./img/photo-sunset-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, ./img/photo-sunset-tablet@2x.jpg 2x">
+          <img class="tile__photo" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Неродные просторы">
+        </picture>
+      </a>
       <div class="tile__info">
         <h3 class="tile__title">Неродные просторы</h3>
         <span class="tile__author">Автор фото: Борис</span>
-        <span class="tile__likes"><span class="tile__like-icon"></span>1350</span>
+        <span class="tile__likes">
+          <svg class="tile__like-icon">
+            <use xlink:href="#icon-like" width="22" height="20"></use>
+          </svg>
+          1350
+        </span>
       </div>
     </li>
     <li class="photo-list__item tile">
-      <picture>
-        <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
-        <source type="image/webp" srcset="img/photo-cactus-mobile@1x.webp 1x, img/photo-cactus-mobile@2x.webp 2x">
-        <source media="(min-width: 1200px)" srcset="./img/photo-cactus-desktop@1x.jpg 1x, ./img/photo-cactus-desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)" srcset="./img/photo-cactus-tablet@1x.jpg 1x, ./img/photo-cactus-tablet@2x.jpg 2x">
-        <img class="tile__photo" src="./img/photo-cactus-mobile@1x.jpg" srcset="./img/photo-cactus-mobile@2x.jpg 2x" alt="Неродные просторы">
-      </picture>
+      <a class="tile__photo-link" href="#">
+        <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/photo-cactus-mobile@1x.webp 1x, img/photo-cactus-mobile@2x.webp 2x">
+          <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, ./img/photo-cactus-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, ./img/photo-cactus-tablet@2x.jpg 2x">
+          <img class="tile__photo" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Неродные просторы">
+        </picture>
+      </a>
       <div class="tile__info">
         <h3 class="tile__title">Местная растительность</h3>
         <span class="tile__author">Автор фото: Сергей</span>
-        <span class="tile__likes"><span class="tile__like-icon"></span>143</span>
+        <span class="tile__likes">
+          <svg class="tile__like-icon">
+            <use xlink:href="#icon-like" width="22" height="20"></use>
+          </svg>
+          143
+        </span>
       </div>
     </li>
     <li class="photo-list__item tile">
-      <picture>
-        <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
-        <source type="image/webp" srcset="img/photo-roads-mobile@1x.webp 1x, img/photo-roads-mobile@2x.webp 2x">
-        <source media="(min-width: 1200px)" srcset="./img/photo-roads-desktop@1x.jpg 1x, ./img/photo-roads-desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)" srcset="./img/photo-roads-tablet@1x.jpg 1x, ./img/photo-roads-tablet@2x.jpg 2x">
-        <img class="tile__photo" src="./img/photo-roads-mobile@1x.jpg" srcset="./img/photo-roads-mobile@2x.jpg 2x" alt="Неродные просторы">
-      </picture>
+      <a class="tile__photo-link" href="#">
+        <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/photo-roads-mobile@1x.webp 1x, img/photo-roads-mobile@2x.webp 2x">
+          <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, ./img/photo-roads-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, ./img/photo-roads-tablet@2x.jpg 2x">
+          <img class="tile__photo" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Неродные просторы">
+        </picture>
+      </a>
       <div class="tile__info">
         <h3 class="tile__title">Дорога на север</h3>
         <span class="tile__author">Автор фото: Петр</span>
-        <span class="tile__likes"><span class="tile__like-icon"></span>96</span>
+        <span class="tile__likes">
+          <svg class="tile__like-icon">
+            <use xlink:href="#icon-like" width="22" height="20"></use>
+          </svg>
+          96
+        </span>
       </div>
     </li>
     <li class="photo-list__item tile">
-      <picture>
-        <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
-        <source type="image/webp" srcset="img/photo-bridge-mobile@1x.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
-        <source media="(min-width: 1200px)" srcset="./img/photo-bridge-desktop@1x.jpg 1x, ./img/photo-bridge-desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)" srcset="./img/photo-bridge-tablet@1x.jpg 1x, ./img/photo-bridge-tablet@2x.jpg 2x">
-        <img class="tile__photo" src="./img/photo-bridge-mobile@1x.jpg" srcset="./img/photo-bridge-mobile@2x.jpg 2x" alt="Неродные просторы">
-      </picture>
+      <a class="tile__photo-link" href="#">
+        <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/photo-bridge-mobile@1x.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
+          <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, ./img/photo-bridge-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, ./img/photo-bridge-tablet@2x.jpg 2x">
+          <img class="tile__photo" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Неродные просторы">
+        </picture>
+      </a>
       <div class="tile__info">
         <h3 class="tile__title">Мост дьявола</h3>
         <span class="tile__author">Автор фото: Антон</span>
-        <span class="tile__likes"><span class="tile__like-icon"></span>254</span>
+        <span class="tile__likes">
+          <svg class="tile__like-icon">
+            <use xlink:href="#icon-like" width="22" height="20"></use>
+          </svg>
+          254
+        </span>
       </div>
     </li>
   </ul>
   <section class="video">
     <div class="video__legend">
-      <h3 class="heading--1">Все еще сомневаетесь?</h3>
+      <h3 class="heading heading--1">Все еще сомневаетесь?</h3>
       <p>Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
     </div>
     <div class="video__player video-player">
@@ -139,18 +169,20 @@
             <span class="video-player__progress-indicator"></span>
           </div>
         </div>
-        <button type="button" class="video-player__btn video-player__btn--subtitles">
-          <span class="visually-hidden">Субтитры</span>
-          <svg width="32" height="20">
-            <use xlink:href="#icon-video-subtitles"></use>
-          </svg>
-        </button>
-        <button type="button" class="video-player__btn video-player__btn--full-screen">
-          <span class="visually-hidden">Полный экран</span>
-          <svg width="20" height="20">
-            <use xlink:href="#icon-video-fullscreen"></use>
-          </svg>
-        </button>
+        <div class="video-player__btn-group">
+          <button type="button" class="video-player__btn video-player__btn--subtitles">
+            <span class="visually-hidden">Субтитры</span>
+            <svg width="32" height="20">
+              <use xlink:href="#icon-video-subtitles"></use>
+            </svg>
+          </button>
+          <button type="button" class="video-player__btn video-player__btn--full-screen">
+            <span class="visually-hidden">Полный экран</span>
+            <svg width="20" height="20">
+              <use xlink:href="#icon-video-fullscreen"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   </section>
@@ -196,5 +228,7 @@
   </p>
 </footer>
 <script src="/js/app.js"></script>
+<script src="/js/picturefill.min.js"></script>
+<script src="/js/svgxuse.min.js"></script>
 </body>
 </html>

@@ -9,7 +9,7 @@
 }
 
 .tile__info {
-  padding-top: 20px;
+  padding-top: 16px;
 }
 
 .tile__title {
@@ -35,7 +35,7 @@
   display: inline-block;
   width: 22px;
   height: 20px;
-  margin-right: 10px;
+  margin: 0 10px -3px 0;
   opacity: 0.3;
   background-image: url("../img/icon-like.svg");
 }
@@ -48,11 +48,12 @@
 
   .photo-list__item--w-100 .tile__photo {
     width: 648px;
+    height: 400px;
   }
 
   .tile__info {
-    padding: 20px;
     position: relative;
+    padding: 16px 20px 7px;
     background-color: $sedona-gray;
   }
 
@@ -60,6 +61,8 @@
     position: absolute;
     right: 20px;
     top: 30px;
+    display: inline-block;
+    min-width: 65px;
   }
 }
 
@@ -75,6 +78,7 @@
 
   .photo-list__item--w-100 .tile__photo {
     width: 1200px;
+    height: 400px;
   }
 
   .tile__info {
@@ -85,5 +89,14 @@
     padding: 20px;
     color: white;
     background-color: rgba(black, 0.3);
+
+    .tile__author {
+      margin-bottom: 0;
+    }
+  }
+
+  .tile__like-icon {
+    fill: white;
+    opacity: 1;
   }
 }

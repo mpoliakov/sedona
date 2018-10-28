@@ -1,17 +1,17 @@
 .footer {
-  padding: 35px 20px;
+  padding: 35px 20px 20px;
   text-align: center;
 }
 
 .footer__hash-tag {
-  margin: 0 0 40px;
+  margin: 0 0 35px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
 }
 
 .footer__social-list {
-  margin: 0 0 40px;
+  margin: 0 0 30px;
 }
 
 .footer__copyright {
@@ -25,7 +25,7 @@
 
 .footer__logo-htmlacademy {
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 @media (min-width: $tablet-width) {
@@ -33,7 +33,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 35px 60px;
+    padding: 30px 60px;
   }
 
   .footer__hash-tag,
