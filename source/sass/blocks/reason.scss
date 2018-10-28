@@ -122,6 +122,12 @@
 
   .reason--blue {
     padding: 45px;
+
+    .reason__desc {
+      br {
+        display: none;
+      }
+    }
   }
 
   .reason__number {
@@ -172,6 +178,12 @@
 
     .reason__title {
       margin-bottom: 15px;
+    }
+
+    .reason__desc {
+      br {
+        display: inline;
+      }
     }
   }
 
